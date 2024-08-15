@@ -11,7 +11,6 @@ function RegistrationPage() {
   const [retypedPassword, setRetypedPassword] = useState("");
 
   const handleRegister = () =>{
-    console.log('Register');
     createUserWithEmailAndPassword(auth, email, password).then((userCredential)=>{
       console.log('User Credential', userCredential);
     }).catch((error)=>{
